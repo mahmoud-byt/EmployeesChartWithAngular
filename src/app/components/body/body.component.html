@@ -1,0 +1,8 @@
+<div class="row">
+    <app-employees-table class="col-6" (sendemps)="receiveEmps($event)"></app-employees-table>
+    <div class="col-6">
+        <div class="chart-container">
+            <canvas  id="MyChart" >{{ chart }}</canvas>
+      </div>
+    </div>
+</div>

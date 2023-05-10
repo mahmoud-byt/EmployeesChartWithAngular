@@ -1,0 +1,17 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Total hours</th>
+        <th scope="col">Edit</th>
+      </tr>
+    </thead>
+    <tbody >
+      <tr *ngFor="let emp of employees" [class.warning]="emp.totalHours<100">
+        <th scope="row">{{emp.EmployeeName}}</th>
+        <td>{{emp.totalHours}} hrs</td>
+        <td><a href="">Edit</a></td>
+      </tr>
+      <tr>
+    </tbody>
+  </table>
